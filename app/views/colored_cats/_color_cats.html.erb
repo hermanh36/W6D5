@@ -1,0 +1,17 @@
+<ul>
+  <li><%= colored_cat.birth_date %></li>
+  <li><%= colored_cat.name %></li>
+  <li><%= colored_cat.age %></li>
+  <li><%= colored_cat.color %></li>
+  <li><%= colored_cat.sex%></li>
+  <li><%= colored_cat.description%></li>
+  <% if action == :show %>
+    <li><a href ="<%= colored_cats_url %>">Cats Index</a></li>
+  <% else %>
+    <li><a href="<%colored_cat_url(colored_cat)%>">Cat Show Page</a></li>
+    <% debugger %>
+  <% end %>
+</ul>
+
+
+

@@ -1,0 +1,8 @@
+<ul>
+  <% @cats.each do |colorcat| %>
+    <li>
+      <%= render 'color_cats', colored_cat: colorcat, action: :index %>
+      <%# Note how we pass each partial iteration the current user, not the @user %>
+    </li>
+  <% end %>
+</ul>
